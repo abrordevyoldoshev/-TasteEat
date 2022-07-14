@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Taviraj:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arima', cursive;
+  font-family: 'Taviraj', serif;
+}
+
+@import "Varebls";
+@import "Logo";
+@import "Navbar";
+@import "Header";
+@import "about";

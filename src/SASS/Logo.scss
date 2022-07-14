@@ -1,0 +1,99 @@
+.logo {
+  width: 100%;
+  background-color: $bacgkraund;
+  padding: 1rem 5%;
+  .content-l {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    img {
+      width: 20rem;
+    }
+
+    .logo-btn {
+      padding: 0.5rem 2rem;
+      background-color: transparent;
+      border: 1px solid $logoColors;
+      color: #fff;
+      transition: 0.3s all ease-out;
+      @include font(1rem, 300);
+
+      &:hover {
+        background-color: $logoColors;
+      }
+
+      &:nth-of-type(2) {
+        background-color: $logoColors;
+        padding: 0.5rem 2.5rem;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 657px) {
+  .logo {
+    width: 100%;
+    .content-l {
+      flex-direction: column;
+
+
+      img {
+        width: 10rem;
+      }
+
+      .logo-btn {
+        font-size: small;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768.98px) {
+  .logo {
+    padding: 1rem 0%;
+    //margin: auto;
+    display: block;
+    .content-l {
+      display: grid;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 1rem;
+      }
+      .logo-btn {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .logo {
+    width: 100%;
+    padding: 1rem 0%;
+    .content-l {
+      width: 100%;
+
+      img {
+        width: 17rem;
+      }
+
+      .logo-btn {
+        font-size: 1rem;
+        
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
